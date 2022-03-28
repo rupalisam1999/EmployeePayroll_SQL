@@ -34,8 +34,13 @@ Select salary FROM employee_payroll WHERE name = 'Rupali';
 SELECT *from employee_payroll
      WHERE start BETWEEN CAST ('2022-3-28' as date) AND GETDATE();
 
+--UC6 = Ability to add gender in to employee payroll
 
+Alter table employee_payroll add Gender char(1);
+ SELECT * from employee_payroll;
 
- 
+ UPDATE employee_payroll SET Gender = 'F' WHERE name = 'Rupali';
+ UPDATE employee_payroll SET Gender = 'F' WHERE name = 'Deepali' or name = 'Seema';
+ SELECT * from employee_payroll;
  
  
