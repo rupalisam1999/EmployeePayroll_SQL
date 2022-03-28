@@ -24,6 +24,10 @@ INSERT INTO employee_payroll VALUES('Seema',6000,'2022-3-29')
 
 SELECT *from employee_payroll;
 
+--UC4 = Retriving employee data
+SELECT *from employee_payroll;
+
+
 
 
  
