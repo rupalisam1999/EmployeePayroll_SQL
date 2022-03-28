@@ -15,6 +15,17 @@ start    Date NOT NULL,
 
 );
 SELECT *from employee_payroll;
+
+--UC3 = Insert values in employeepayroll
+
+INSERT INTO employee_payroll VALUES('Rupali',2000,'2022-3-28') 
+INSERT INTO employee_payroll VALUES('Deepali',4000,'2022-3-26') 
+INSERT INTO employee_payroll VALUES('Seema',6000,'2022-3-29') 
+
+SELECT *from employee_payroll;
+
+
+
  
  
  
