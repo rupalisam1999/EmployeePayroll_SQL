@@ -27,6 +27,12 @@ SELECT *from employee_payroll;
 --UC4 = Retriving employee data
 SELECT *from employee_payroll;
 
+--UC5 = Retrieve A particular employee salary data 
+
+Select salary FROM employee_payroll WHERE name = 'Rupali';
+
+SELECT *from employee_payroll
+     WHERE start BETWEEN CAST ('2022-3-28' as date) AND GETDATE();
 
 
 
