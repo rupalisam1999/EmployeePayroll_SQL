@@ -66,4 +66,19 @@ update employee_payroll set PhoneNo = 9322775475 where id = 1;
 alter table employee_payroll add Address varchar(100) not null default 'Hydrabad';
 alter table employee_payroll add Department varchar(250) not null default 'Mechanical';
 select * from employee_payroll;
+ 
+ --UC9 = Extend employee payroll table by adding basicpay, deduction,incometax, taxablepay,netpay.
+
+Alter table employee_payroll
+add basic_pay float, Deduction float, Taxable_Pay float, Income_Tax float, Net_Pay float;
+select *from employee_payroll;
+
+Update employee_payroll set Deduction = 1000 where Gender = 'F';
+Update employee_payroll set Deduction = 1000 where Gender = 'F';
+Update employee_payroll set basic_pay = 5000 where Gender = 'F';
+Update employee_payroll set basic_pay = 8000 where Gender = 'F';
+update employee_payroll set Net_Pay = (basic_Pay - Deduction)
+update employee_payroll set Taxable_Pay = 0, Income_Tax = 0
+select * from employee_payroll; Update employee_payroll set Deduction = 2000 where Gender = 'F';
+
 
