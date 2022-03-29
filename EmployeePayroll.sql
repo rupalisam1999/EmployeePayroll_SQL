@@ -55,6 +55,15 @@ SELECT MIN(salary) FROM employee_payroll WHERE Gender = 'F' Group By Gender;
  SELECT Max(salary) FROM employee_payroll WHERE Gender = 'F' Group By Gender;
  SELECT * from employee_payroll;
  
+ --UC8 = Extend employee payroll data to insert employee phone address
 
- 
+ use payroll_service;
+ select * from employee_payroll;
+
+ alter table employee_payroll add PhoneNo bigint;
+select * from employee_payroll;
+update employee_payroll set PhoneNo = 9322775475 where id = 1;
+alter table employee_payroll add Address varchar(100) not null default 'Hydrabad';
+alter table employee_payroll add Department varchar(250) not null default 'Mechanical';
+select * from employee_payroll;
 
