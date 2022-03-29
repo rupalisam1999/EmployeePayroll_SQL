@@ -82,3 +82,11 @@ update employee_payroll set Taxable_Pay = 0, Income_Tax = 0
 select * from employee_payroll; Update employee_payroll set Deduction = 2000 where Gender = 'F';
 
 
+-- UC10 - Adding another Value for Terissa in Sales&Marketing Department.
+
+insert into employee_payroll 
+values('Terissa',400000.00,'2022-3-28','F',8156782910,'pune','Sales',2000,1000,200,18000,8000),
+('Terissa',400000.00,'2022-3-27','F',8156782910,'pune','Marketing',2000,1000,200,18000,6000);
+select * from employee_payroll;
+
+
